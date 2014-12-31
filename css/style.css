@@ -1,0 +1,125 @@
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/style.scss */
+h2 {
+  margin: 2em auto 0;
+}
+
+/* line 6, ../sass/style.scss */
+.todo-list {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+/* line 13, ../sass/style.scss */
+.todo-list .status-true {
+  text-decoration: line-through;
+  color: gray;
+}
+/* line 17, ../sass/style.scss */
+.todo-list ul {
+  position: relative;
+  width: 260px;
+  margin: 20px auto;
+  padding: 0;
+  background: #FFF;
+  border: 1px solid;
+  border-color: #DFDCDC #D9D6D6 #CCC;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 29, ../sass/style.scss */
+.todo-list ul li {
+  position: relative;
+  padding: 7px 15px;
+  margin: 0;
+  line-height: 21px;
+  font-size: 12px;
+  color: #8B8F97;
+  list-style: none;
+  border-bottom: 1px solid #E6EBED;
+}
+/* line 38, ../sass/style.scss */
+.todo-list ul li:last {
+  border: 0;
+}
+/* line 43, ../sass/style.scss */
+.todo-list .remaining {
+  margin-top: 2em;
+}
+/* line 46, ../sass/style.scss */
+.todo-list input {
+  padding: 5px;
+}
+/* line 50, ../sass/style.scss */
+.todo-list input[type='text'] {
+  color: #333;
+}

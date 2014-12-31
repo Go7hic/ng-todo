@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 class="text-center">ToDo List</h2>
+        </header>
+        <div class="row">
+            <div class="todo-list" ng-app>
+
+                <div ng-controller="TodoCtrl">
+                    <form action="" ng-submit="addTodo()">
+                        <input type="text" required ng-model="todoText" placeholder="添加新计划">
+                        <input type="submit" class="btn-primary" value="添加">
+                    </form>
+                    <div class="remaining">
+                        <span>{{remaining()}} of {{todos.length}} remaining</span>
+                        [<a href="" ng-click="archive()">archive</a>]
+                        <ul class="task">
+                            <li ng-repeat="todo in todos">
+                                <input type="checkbox" ng-model="todo.status">
+                                <span class="status-{{todo.status}}">{{todo.text}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
