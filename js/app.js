@@ -1,5 +1,7 @@
-function TodoCtrl($scope) {
-    $scope.todos = [
+angular.module('todoList',[])
+.controller('TodoCtrl',
+    function($scope) {
+        $scope.todos = [
     {text:'11111',status:true},
     {text:'222222',status:false}];
 
@@ -23,4 +25,4 @@ function TodoCtrl($scope) {
             }
         });
     };
-}
+    })
